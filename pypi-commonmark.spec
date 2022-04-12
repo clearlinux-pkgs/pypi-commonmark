@@ -4,7 +4,7 @@
 #
 Name     : pypi-commonmark
 Version  : 0.9.1
-Release  : 29
+Release  : 30
 URL      : https://files.pythonhosted.org/packages/60/48/a60f593447e8f0894ebb7f6e6c1f25dafc5e89c5879fdc9360ae93ff83f0/commonmark-0.9.1.tar.gz
 Source0  : https://files.pythonhosted.org/packages/60/48/a60f593447e8f0894ebb7f6e6c1f25dafc5e89c5879fdc9360ae93ff83f0/commonmark-0.9.1.tar.gz
 Summary  : Python parser for the CommonMark Markdown spec
@@ -15,10 +15,6 @@ Requires: pypi-commonmark-license = %{version}-%{release}
 Requires: pypi-commonmark-python = %{version}-%{release}
 Requires: pypi-commonmark-python3 = %{version}-%{release}
 BuildRequires : buildreq-distutils3
-Provides: commonmark
-Provides: commonmark-python
-Provides: commonmark-python3
-BuildRequires : pypi(future)
 
 %description
 =============
@@ -54,7 +50,6 @@ Summary: python3 components for the pypi-commonmark package.
 Group: Default
 Requires: python3-core
 Provides: pypi(commonmark)
-Requires: pypi(future)
 
 %description python3
 python3 components for the pypi-commonmark package.
@@ -69,7 +64,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1641424507
+export SOURCE_DATE_EPOCH=1649730047
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
